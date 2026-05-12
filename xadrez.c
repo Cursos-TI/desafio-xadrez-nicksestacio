@@ -1,27 +1,21 @@
 #include <stdio.h>
 
 int main() {
-    int i;
 
-    printf("Movimento do Bispo:\n");
-    i = 0;
-    while (i < 5) {
-        printf("Cima\n");
-        printf("Direita\n");
-        i++;
+    int i, j;
+
+    printf("Movimento do Cavalo:\n");
+
+    for(i = 0; i < 2; i++) {
+        printf("Baixo\n");
+
+        while(i == 1) {
+            for(j = 0; j < 1; j++) {
+                printf("Esquerda\n");
+            }
+            break;
+        }
     }
-
-    printf("\nMovimento da Torre:\n");
-    for (i = 0; i < 5; i++) {
-        printf("Direita\n");
-    }
-
-    printf("\nMovimento da Rainha:\n");
-    i = 0;
-    do {
-        printf("Esquerda\n");
-        i++;
-    } while (i < 8);
 
     return 0;
 }
